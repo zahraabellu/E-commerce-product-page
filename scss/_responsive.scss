@@ -1,0 +1,160 @@
+@use 'variables'as *;
+
+
+
+@media (max-width: 480px){
+body{
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+  .menu-bar{
+    display: block !important;
+    border: none;
+    z-index: 10000;
+    // background-color: $white;
+  }
+  .menuicon{
+    background-color: $white;
+    cursor: pointer;
+    // padding: 10px;
+    font-size: 1.4rem;
+    margin-top: -2.5rem;
+  }
+  .header__img{
+    width: 50%;
+    max-width: 100px; 
+    height: auto; 
+    
+  }
+  .header__cart{
+    height: auto;
+    width: 50%;
+        
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  .header{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+
+  }
+  a{
+    display: none;
+  }
+  .main__product{
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 400px;
+    margin-bottom: -350px;
+    z-index: -10;
+  }
+  .main__product__choices{
+    visibility: hidden;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .lightbox{
+    visibility: hidden;
+  }
+  .quantity__number{
+margin-left: -250px;
+  }
+  .previous__responsive{
+    display: block!important;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    margin-top: 8rem;
+    margin-left: 20rem;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .next__responsive{
+    display: block!important;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    margin-top: 11rem;
+    cursor: pointer;
+  }
+  .img__part{
+    position: relative;
+  }
+  .order__registration{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .hidden__box.show{
+    display: block;
+    width: 22rem;
+    height: 15rem;
+    padding: 2rem;
+    background-color: $white;
+    position: absolute;
+    border-radius: 10px;
+    left: 3rem;
+    top: 6rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.55);
+}
+.nav{
+  background-color:$white;
+  // display: block!important;
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  z-index: 100;
+  
+  padding-left: 2rem;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.7);
+
+ 
+  top: 0;
+  left: 0;
+  
+  
+
+
+}
+.a__nav{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.a__nav{
+  color: $dark-grayish-blue;
+  
+}
+.collnav{
+  
+  margin-top: 3rem;
+}
+.closeicon{
+  margin-top: 1rem;
+  background-color: $white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.8rem;
+}
+.close-menu{
+  border: none;
+}
+}

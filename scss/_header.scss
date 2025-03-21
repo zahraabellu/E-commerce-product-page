@@ -1,0 +1,152 @@
+@use 'variables'as *;
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 40px;
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $grayish-blue;
+//  position: relative;
+
+  &__avatar{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+   display: block;
+  }
+  &__avatar:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 100%;
+    transition: border .1s ease-in;
+  }
+  &__img{
+    
+    width: 150px;
+    height: 25px;
+    margin-right: 70px;
+  }
+
+  &__cart{
+width: 25px;
+height: 25px;
+    margin-left: 300px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 20px;
+ position: relative;
+
+  }
+}
+a{
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 9px;
+  color: $dark-grayish-blue;
+  font-weight: 500;
+  
+  
+  
+}
+a:hover{
+  color: $black;
+  border-bottom: 4px solid $orange;
+  transition: border-bottom .3s ease-out;
+  
+}
+
+.hidden__box{
+  display: none;
+  
+  & h2{
+    font-size: 1.1rem;
+    padding-bottom: 11px;
+    border-bottom: 1px solid $grayish-blue;
+  }
+  &__p{
+    color: rgb(99, 98, 98);
+    font-weight: 550;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1rem;
+  }
+}
+
+.hidden__box.show{
+  display: block;
+  width: 22rem;
+  height: 15rem;
+  padding: 2rem;
+  background-color: $white;
+  position: absolute;
+  border-radius: 10px;
+  right: 11rem;
+  top: 6rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.55);
+}
+.structure__js{
+  display: flex;
+
+gap: 10px;
+margin-top: 2rem;
+}
+
+.paragraph__js{
+  font-size: 1.1rem;
+  color: gray;
+  font-weight: 500;
+}
+.image__js{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5px;
+}
+
+.trash{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  
+}
+.checkout{
+  margin-top: 1rem;
+  padding: 15px;
+  background-color: $orange;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 18rem;
+  text-align: center;
+  cursor: pointer;
+}
+strong{
+  color: #000;
+}
+
+.quantity__number{
+  position: relative;
+}
+.cart-count{
+  position: absolute;
+  background-color: $orange;
+  border-radius: 100%;
+  font-size: 0.8rem;
+  padding: 3px 7px;
+  right: 18px;
+  top: -2px;
+  color: #fff;
+  font-weight: 600;
+  display: none;
+}
+.menu-bar{
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+  
+  cursor: pointer;
+  display: none;
+}
+.close-menu{
+  display: none;
+}
